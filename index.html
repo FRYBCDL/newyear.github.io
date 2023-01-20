@@ -78,7 +78,9 @@
 <script src="gameCanvas-4.0.js"></script>
 <script src="script.js"></script>
 
+<!--<audio autoplay="autoplay" loop="loop" preload="auto" src="//music.163.com/outchain/player?type=2&id=395304&auto=1&height=66"></audio>-->
 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="100" width=86 height=86 src="//music.163.com/outchain/player?type=2&id=395304&auto=1&height=66" v-if="isAutio"></iframe>
 <!--放大图片，没这个东西就没有福字-->
 <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/transition.js"></script>
@@ -125,7 +127,7 @@
                         {
                           top: endPositionTop,
                           left: endPositionLeft,
-                          opacity: 0.2,
+                          opacity: 1,//调节福字消失前的透明度
                         },
                         durationFall,
                         "linear",
@@ -148,7 +150,7 @@
 <!--打字机特效-->
 <script>
   function start(){
-    let str = '沈老师,祝您新的一年多发paper，工作顺利，学术财路两开花；祝您和家人平安快乐，身体健康，兔年行大运！  <br/>  <br/>  !!!  '
+    let str = '沈老师,小付给您拜年啦！祝您新的一年发文章每投必中，工作生活都顺利，学术财路两开花！祝您和家人平平安安，身体健康，心想事成，万事如意，福从天降，兔年行大运，开心每一天！  <br/>  '
     let str_ = ''
     let i = 0
     let content = document.getElementById('contents')
